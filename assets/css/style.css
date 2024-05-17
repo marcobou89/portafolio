@@ -5,13 +5,14 @@
     --amarillo:#E6A429;
     --background: rgba(0, 0, 0, 0.719) ;
     --font:font-family: "Barlow Condensed", sans-serif;
+    --boxshadow: 2px 2px 10px -1px rgba(235, 232, 232, 0.651);
 }
 
 /* Dispositivos md Tablet */
 /* 0 - 768px */
 @media (max-width: 500px) {
 .h1{
-    font-size: 40px;
+    font-size: 45px;
 
 }
 .h2{
@@ -24,8 +25,6 @@
 .imgproyecto1{
 width: 100px;
 height: 100px;
-
-
 }
 .imgproyecto2{
     width: 50px;
@@ -33,15 +32,21 @@ height: 100px;
 }
 fieldset{
 width: 100px;
-
 }
 .acordeon{
 width: 200px;  
 }
-
-
+.contenedorinfo{
+height: 67vh;
+}
 }
 
+@media (min-width:501px) {
+    .contenedorinfo{
+        height: 80vh;   
+
+}
+}
 
 header{
     margin: 0%;
@@ -107,6 +112,7 @@ p{
     opacity:0.7;
     
 }
+
 
 
 /*============= nav ======*/
@@ -204,7 +210,7 @@ nav> a:hover{
 
 
 .secinfo{
-    
+    margin: 0px 10px;
     display: flex;
     align-items: center;
     height: auto;
@@ -212,11 +218,11 @@ nav> a:hover{
     flex-wrap: wrap;
     border-radius: 5px;
     background-color: var(--background);
+    box-shadow: 2px 2px 10px -1px rgba(235, 232, 232, 0.651);
 }
 
 
 .contenedorinfo{
-    height: calc(100vh - var(--header-height));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,6 +307,9 @@ nav> a:hover{
 
 
 .habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 10px;
     border-radius: 16px;
     background-color: rgba(0, 0, 0, 0.822);
@@ -411,6 +420,10 @@ background-color: rgba(0, 0, 0, 0.822);
 
 }
 
+.proyectos p{
+    text-align: center;
+    margin: .5em;
+}
 
 .divproyectostitulo{
 display: flex;
@@ -442,7 +455,7 @@ padding: 20px 20px 0px 20px;
     align-items: center;
     width: 500px;
     border-radius: 16px;
-    box-shadow: 2px 2px 25px 1px rgba(255, 255, 255, 0.849);
+    box-shadow: 2px 2px 5px 1px rgb(216, 102, 182);
 }
 
 .divempresa{
@@ -583,8 +596,13 @@ box-shadow: 2px 2px 2px 2px rgb(54, 49, 49);
         align-items: center;
         flex-wrap: wrap;
         
+        
         }
         
+        .divcontactotitulo p{
+            margin:.5em;
+        }
+
         .divcontactocontenido{
         display: flex;
         flex-direction: row;
@@ -618,7 +636,7 @@ box-shadow: 2px 2px 2px 2px rgb(54, 49, 49);
             display: flex;
             flex-direction: column;
             justify-content: start;
-            padding: 2em;
+            padding: 1em;
             border-radius: 16px;
             border: 1px solid;
             background-color: rgba(255, 255, 255, 0.24);
@@ -702,7 +720,6 @@ box-shadow: 2px 2px 2px 2px rgb(54, 49, 49);
         }
         .secfooter{
         
-        padding: 1rem;
         border-radius: 16px;
         background-color: rgba(0, 0, 0, 0.822);
 
